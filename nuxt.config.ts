@@ -8,9 +8,14 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()]
   },
   css: ["~/assets/css/tailwind.css"],
-  ssr: false,
+  ssr: true,
+  nitro: {
+    preset: 'static' // This makes Nuxt generate a static site
+  },
   modules: ['@pinia/nuxt', "nuxt-bootstrap-icons"],
   app:{
+    baseURL: '/esp32/',
+    buildAssetsDir: 'assets',
     head:{
       link:[
         { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css' },

@@ -27,7 +27,7 @@
      
 
         <button type="submit" :disabled="!lcdMessage"
-        class="btn btn-primary mt-4 w-full">Connect</button>
+        class="btn btn-primary mt-4 w-full">Send Message</button>
 
         <button @click="clearMessage" type="button"
         class="btn btn-primary mt-4 w-full">Clear Message</button>
