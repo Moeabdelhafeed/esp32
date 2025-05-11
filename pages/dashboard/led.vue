@@ -14,7 +14,7 @@
     </div>
 
     <!-- Button Section (Grows) -->
-    <div class="flex-1 flex-col  flex items-center justify-center">
+    <div class="flex-1 flex-col  flex items-center mt-30">
       <button
         @click="toggleLed"
         :class="[
